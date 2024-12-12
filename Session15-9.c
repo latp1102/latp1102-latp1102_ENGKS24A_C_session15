@@ -8,7 +8,7 @@ int main() {
     printf("%s\n",str);
 
     printf("Nhap vao ky tu can xoa: ");
-    scanf(" %c", &khoangTrong); // Dùng kho?ng tr?ng d? b? qua các kho?ng tr?ng d?u dòng
+    scanf(" %c", &khoangTrong); 
 
     int len = strlen(str);
     for (int i = j = 0; i < len; i++) {
