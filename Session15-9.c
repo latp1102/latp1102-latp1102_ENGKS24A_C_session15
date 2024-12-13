@@ -10,13 +10,13 @@ int main() {
     printf("Nhap vao ky tu can xoa: ");
     scanf(" %c", &khoangTrong); 
 
-    int len = strlen(str);
-    for (int i = 0; i < len; i++) {
+    int n = strlen(str);
+    for (int i = 0; i < n; i++) {
         if (str[i] == khoangTrong) { 
-            for (int j = i; j < len; j++) {
+            for (int j = i; j < n; j++) {
                 str[j] = str[j + 1]; 
             }
-            len--; 
+            n--; 
             i--;  
         }
     }
