@@ -11,12 +11,15 @@ int main() {
     scanf(" %c", &khoangTrong); 
 
     int len = strlen(str);
-    for (int i = j = 0; i < len; i++) {
-        if (str[i] != khoangTrong) {
-            str[j++] = str[i];
+    for (int i = 0; i < len; i++) {
+        if (str[i] == khoangTrong) { 
+            for (int j = i; j < len; j++) {
+                str[j] = str[j + 1]; 
+            }
+            len--; 
+            i--;  
         }
     }
-    str[j] = '\0';
 
     printf("Chuoi sau khi xoa: %s\n", str);
 
